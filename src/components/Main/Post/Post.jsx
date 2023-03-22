@@ -34,13 +34,15 @@ const Post = () => {
               alt="Random"
               crossOrigin="anonymous"
             />
+            <figcaption>
+              <h2 className={styles["Post__Container__Card__Title"]}>
+                {post.title}
+              </h2>
+              <p className={styles["Post__Container__Card__Content"]}>
+                {post.body}
+              </p>
+            </figcaption>
           </figure>
-          <h2 className={styles["Post__Container__Card__Title"]}>
-            {post.title}
-          </h2>
-          <p className={styles["Post__Container__Card__Content"]}>
-            {post.body}
-          </p>
           <a
             className={styles["Post__Container__Card__Link"]}
             href={`/posts/${post.id}`}
