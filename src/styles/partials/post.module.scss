@@ -110,3 +110,24 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+// Pagination
+
+.Pagination__Container {
+    margin-bottom: 20px;
+    column-gap: 10px;
+    .Pagination__Button {
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        border: 4px solid $white;
+        background: $white;
+    }
+    .Pagination__Button--Active {
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        border: 4px solid $green;
+        background: $white;
+    }
+}
