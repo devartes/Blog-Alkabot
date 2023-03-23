@@ -1,0 +1,40 @@
+.CommentSection__List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .CommentSection {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $pink;
+        &__Identification {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            &__Avatar {
+                border-radius: 100px;
+                margin-right: 15px;
+                border: 5px solid $green;
+            }
+            &__UserName {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+        }
+        &__Email {
+            font-size: 16px;
+            font-weight: 400;
+            color: $gray;
+            margin: 10px 0;
+        }
+        &__Title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &__Commentary{
+            margin: 5px 0 10px;
+        }
+        &__DateTime{
+            font-size: 15px;
+        }
+    }
+}

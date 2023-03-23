@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/app.module.scss";
+import CommentSection from "../components/CommentSection/CommentSection";
 
 const PostDetails = (props) => {
   const [post, setPost] = useState(null);
@@ -34,6 +35,7 @@ const PostDetails = (props) => {
           </p>
         </figcaption>
       </figure>
+      <CommentSection postId={post.id} />
     </article>
   );
 };
