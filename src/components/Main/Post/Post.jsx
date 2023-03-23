@@ -7,11 +7,32 @@ const Post = () => {
   const [postId, setPostId] = useState(null);
 
   useEffect(() => {
+    const handlePopState = () => {
+      const postId = window.location.pathname.split("/")[2];
+      setPostId(postId || null);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data))
       .catch((error) => console.log(error));
   }, []);
+
+  useEffect(() => {
+    if (postId) {
+      window.history.pushState(null, "", `/posts/${postId}`);
+    } else {
+      window.history.pushState(null, "", "/");
+    }
+  }, [postId]);
 
   const handlePostClick = (event, postId) => {
     event.preventDefault();
