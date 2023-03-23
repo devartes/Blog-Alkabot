@@ -115,6 +115,7 @@
 .Pagination__Container {
     margin-bottom: 20px;
     column-gap: 10px;
+    display: flex;
     .Pagination__Button {
         width: 35px;
         height: 35px;
