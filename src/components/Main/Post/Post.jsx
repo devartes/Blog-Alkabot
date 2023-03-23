@@ -92,14 +92,13 @@ const Post = () => {
                 </p>
               </figcaption>
             </figure>
-            <a
-              className={styles["Post__Container__Card__Link"]}
-              href={`/posts/${post.id}`}
+            <button
+              className={styles["Post__Container__Card__Button"]}
               onClick={(event) => handlePostClick(event, post.id)}
               key={post.id}
             >
               Ler Mais
-            </a>
+            </button>
           </article>
         ))}
       </article>

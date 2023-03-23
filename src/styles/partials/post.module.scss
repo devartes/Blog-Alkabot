@@ -14,7 +14,7 @@
             overflow: auto;
             text-overflow: ellipsis;
             max-width: 100%;
-            max-height: 36px;
+            height: 36px;
             font-weight: 700;
             font-size: 1em;
             line-height: 18px;
@@ -80,16 +80,15 @@
                 object-fit: cover;
             }
         }
-        &__Link {
-            font-weight: 500;
+        &__Button {
+            font-weight: 700;
             font-size: 13px;
             line-height: 17px;
-            color: $black;
+            color: $white;
             margin: 0 18px;
-            text-decoration: underline;
-            text-decoration-color: $green;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 4px;
+            background: $black;
+            border: none;
+            height: 40px;
         }
     }
 }
