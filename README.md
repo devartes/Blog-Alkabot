@@ -17,7 +17,7 @@ The layout design for this project was created using Figma. You can view the des
 
 ## Live demo
 
-You can view a live demo of this project by visiting [this link](https://blog-alkabot.vercel.app).
+You can view a live demo of this project by visiting [this link](https://blog-alkabot-dev.vercel.app).
 
 ## Technologies used
 
