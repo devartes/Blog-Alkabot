@@ -6,7 +6,7 @@ const Post = () => {
   const [posts, setPosts] = useState([]);
   const [postId, setPostId] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(12);
+  const [postsPerPage] = useState(8);
 
   useEffect(() => {
     const handlePopState = () => {
