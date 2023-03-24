@@ -1,0 +1,53 @@
+.Footer {
+    min-height: 198px;
+    background: $black2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__Initial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        row-gap: 10px;
+        padding: 0 9.24%;
+        &__Phrase {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            color: $white;
+            margin: 0;
+            padding: 0;
+        }
+        &__Links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            padding: 0;
+            a {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: $white;
+                padding-right: 6px;
+                border-right: 2px solid $green;
+                text-decoration: none;
+            }
+        }
+    }
+    &__Final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $green;
+        margin: 0;
+        padding: 0 9.24%;
+        min-height: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        color: $white;
+    }
+}

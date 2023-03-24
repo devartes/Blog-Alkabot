@@ -1,0 +1,39 @@
+.PostDetails__Container {
+    .CardDetails__Figure {
+        margin: 0;
+        position: relative;
+        &__Image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .PostDetails__Container__Card__Title {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .PostDetails__Container__Card__Content {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: $black;
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PostDetails__Container {
+        .CardDetails__Figure {
+            .PostDetails__Container__Card__Title {
+                top: 30%;
+            }
+        }
+    }
+}
